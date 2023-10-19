@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>TABELA IMC</h1>
+    <table>
+        <tr>
+            <th class="left-align">IMC</th>
+            <th class="right-align">Resultado</th>
+        </tr>
+        <tr>
+            <td class="left-align">Menos que 18,5</td>
+            <td class="right-align">Abaixo do peso</td>
+        </tr>
+        <tr>
+            <td class="left-align">Entre 18,5 e 24,9</td>
+            <td class="right-align">Peso Normal</td>
+        </tr>
+        <tr>
+            <td class="left-align">Entre 25 e 29,9</td>
+            <td class="right-align">Sobrepeso</td>
+        </tr>
+        <tr>
+            <td class="left-align">Entre 30 e 34,9</td>
+            <td class="right-align">Obesidade grau 1</td>
+        </tr>
+        <tr>
+            <td class="left-align">Entre 35 e 39,9</td>
+            <td class="right-align">Obesidade grau 2</td>
+        </tr>
+        <tr>
+            <td class="left-align">Mais do que 40</td>
+            <td class="right-align">Obesidade grau 3</td>
+        </tr>
+    </table>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        table, th, td {
+            border: none;
+        }
+    
+        td {
+            padding-right: 20px;
+        }
+    
+        .left-align {
+            text-align: left; /* Alinha o conteúdo à esquerda */
+        }
+    
+        .right-align {
+            text-align: right; /* Alinha o conteúdo à direita */
+        }
+    </style>
+    <form action="/" id="formulario" method="POST">
+      <label for="  peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
+
+  <script src="./assets/css/js/main.js"></script>
+</body>
+
+</html>
